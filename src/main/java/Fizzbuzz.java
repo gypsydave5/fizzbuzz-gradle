@@ -1,5 +1,6 @@
 public class Fizzbuzz {
     public static String makeFizzbuzz(int number) {
+        if (isDivisibleByFifteen(number)) return "FizzBuzz";
         if (isDivisibleByFive(number)) return "Buzz";
         if (isDivisibleByThree(number)) return "Fizz";
         return "2";
@@ -15,5 +16,9 @@ public class Fizzbuzz {
 
     private static boolean isDivisibleByFive(int number) {
         return isDivisibleBy(number, 5);
+    }
+
+    private static boolean isDivisibleByFifteen(int number) {
+        return isDivisibleBy(number, 15);
     }
 }

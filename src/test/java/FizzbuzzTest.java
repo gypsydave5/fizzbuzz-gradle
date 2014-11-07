@@ -19,4 +19,9 @@ public class FizzbuzzTest {
     public void returnsBuzzWhenFive() {
         assertThat(Fizzbuzz.makeFizzbuzz(5), is("Buzz"));
     }
+
+    @Test
+    public void returnsFizzBuzzWhenFifteen() {
+        assertThat(Fizzbuzz.makeFizzbuzz(15), is("FizzBuzz"));
+    }
 }
