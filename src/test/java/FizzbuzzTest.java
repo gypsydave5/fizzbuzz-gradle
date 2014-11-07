@@ -9,4 +9,10 @@ public class FizzbuzzTest {
     public void returnsTwoWhenTwo() {
         assertThat(Fizzbuzz.makeFizzbuzz(2), is("2"));
     }
+
+    @Test
+    public void returnsFizzWhenThree() {
+        assertThat(Fizzbuzz.makeFizzbuzz(3), is("Fizz"));
+
+    }
 }
