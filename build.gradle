@@ -6,7 +6,9 @@ repositories {
 
 test {
     testLogging {
-        exceptionFormat = 'full'
+        exceptionFormat = 'full' //full logging for fails
+        events "passed", "skipped" //displays pasing and skipped tests
+        outputs.upToDateWhen {false} //forces tests to run each time
     }
 }
 
