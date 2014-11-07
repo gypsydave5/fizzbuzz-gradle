@@ -13,6 +13,10 @@ public class FizzbuzzTest {
     @Test
     public void returnsFizzWhenThree() {
         assertThat(Fizzbuzz.makeFizzbuzz(3), is("Fizz"));
+    }
 
+    @Test
+    public void returnsBuzzWhenFive() {
+        assertThat(Fizzbuzz.makeFizzbuzz(5), is("Buzz"));
     }
 }
