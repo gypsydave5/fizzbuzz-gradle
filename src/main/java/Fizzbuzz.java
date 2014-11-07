@@ -1,7 +1,19 @@
 public class Fizzbuzz {
     public static String makeFizzbuzz(int number) {
-        if (number % 5 == 0) return "Buzz";
-        if (number % 3 == 0) return "Fizz";
+        if (isDivisibleByFive(number)) return "Buzz";
+        if (isDivisibleByThree(number)) return "Fizz";
         return "2";
+    }
+
+    private static boolean isDivisibleBy(int numerator, int denominator) {
+        return numerator % denominator == 0;
+    }
+
+    private static boolean isDivisibleByThree(int number) {
+        return isDivisibleBy(number, 3);
+    }
+
+    private static boolean isDivisibleByFive(int number) {
+        return isDivisibleBy(number, 5);
     }
 }
