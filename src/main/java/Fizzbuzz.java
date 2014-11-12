@@ -3,7 +3,7 @@ public class Fizzbuzz {
         if (isDivisibleByFifteen(number)) return "FizzBuzz";
         if (isDivisibleByFive(number)) return "Buzz";
         if (isDivisibleByThree(number)) return "Fizz";
-        return "2";
+        return Integer.toString(number);
     }
 
     private static boolean isDivisibleBy(int numerator, int denominator) {
